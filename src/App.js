@@ -1,33 +1,17 @@
 import React from "react";
 import "./App.css";
-import logo from "./img/logo.svg";
 import mainvisual from "./img/mainvisual.jpg";
 import about from "./img/about.jpg";
 import bicycle1 from "./img/bicycle1.jpg";
 import bicycle2 from "./img/bicycle2.jpg";
 import bicycle3 from "./img/bicycle3.jpg";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
     <div>
-      <header id="header" className="wrapper">
-        <h1 className="site-title">
-          <a href="index.html">
-            <img src={logo} alt="Profile" />
-          </a>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#bicycle">Bicycle</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
+      <Header />
       <main>
         <div id="mainvisual">
           <img src={mainvisual} alt="テキストテキストテキスト" />
@@ -71,10 +55,7 @@ const App = () => {
           </ul>
         </section>
       </main>
-
-      <footer id="footer">
-        <p>© 2020 Profile</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
